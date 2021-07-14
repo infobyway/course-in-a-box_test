@@ -13,7 +13,7 @@ In this module, **Introduction to Connected Learning**, you will learn what conn
 
 ## After completing this module, you will be able to...
 
-* Describe connected learning and what it connects, and navigate the ConnectedLib modules ( [Getting Started](getting-started) )
+* Describe connected learning and what it connects, and navigate the ConnectedLib modules ([Getting Started](../getting-started))
 (<a href="section-1.html">Section 1: Introduction</a>).
 * Implement the four connected learning design principles (<a href="section-2.html">Section 2: Connected Learning Design Principles</a>).
 * Explain how connected learning fits into your library’s mission and goals (<a href="section-3.html">Section 3: Why Your Library Needs Connected Learning</a>).
