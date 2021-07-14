@@ -1,12 +1,14 @@
 ---
-title: 1.1 Connected Learning Defined
+title: What is connected learning
 ---
 
 > “Connected learning is realized when a young person is able to pursue a personal interest or passion with the support of friends and caring adults, and is in turn able to link this learning and interest to academic achievement, career success or civic engagement.”<br/>-- Mimi Ito et al.<sup><a href="#fn1" name="1">1</a></sup>
 
+# What is connected learning? 
+
 Connected learning is an educational framework—an approach to creating learning experiences. Connected learning is driven by learners’ interests, supported by their relationships, and oriented towards academic, economic, or civic opportunity. 
 
-<div class="explanatory">
+<div style="background-color:gray; padding:10px;">
 <p class="box-title">Connected Learning: The Power of Making Learning Relevant</p>
 <p class="videotime">2:20</p>
 <p class="source"><a href="https://dmlhub.net/" class="external">DML Research Hub</a></p>
