@@ -2,9 +2,11 @@
 title: What is connected learning
 ---
 
+# What is connected learning? 
+
 > “Connected learning is realized when a young person is able to pursue a personal interest or passion with the support of friends and caring adults, and is in turn able to link this learning and interest to academic achievement, career success or civic engagement.”<br/>-- Mimi Ito et al.<sup><a href="#fn1" name="1">1</a></sup>
 
-# What is connected learning? 
+
 
 Connected learning is an educational framework—an approach to creating learning experiences. Connected learning is driven by learners’ interests, supported by their relationships, and oriented towards academic, economic, or civic opportunity. 
 
@@ -12,8 +14,7 @@ Connected learning is an educational framework—an approach to creating learnin
 <p class="box-title">Connected Learning: The Power of Making Learning Relevant</p>
 <p class="videotime">2:20</p>
 <p class="source"><a href="https://dmlhub.net/" class="external">DML Research Hub</a></p>
-<div class="video">
-<iframe src="https://www.youtube.com/embed/TH6gH6lMDD8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div></div>
+<iframe src="https://www.youtube.com/embed/TH6gH6lMDD8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 
 At the heart of connected learning is an “equity agenda” to help close the cultural and economic gaps that non-dominant youth face. By connecting teens’ interests and relationships with real-life opportunities, connected learning helps prepare youth for life after high school with 21st century skills and the “new” literacies—digital literacy, media literacy, and others.
 
