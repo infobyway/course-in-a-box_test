@@ -3,20 +3,20 @@ layout: base
 ---
 
 <!-- Banner -->
-<div class="jumbotron jumbotron-fluid">
-	<div class="container text-center">
+<div class="jumbotron jumbotron-fluid" style="height:500;">
+	<div class="container text-center" style="height:500;">
 		{% if site.jumbotron_icon %}
 		<img src="{{ site.baseurl }}/{{ site.jumbotron_icon }}" alt="{{ site.title }} Icon" />
 		{% endif %}
-		<h1>{{ site.data.course.title }}</h1>
-    <p class="lead">{{site.data.course.description}}</p>
+		<h1><!--{{ site.data.course.title }}--> &nbsp;</h1>
+    <p class="lead"><!-- {{site.data.course.description}} -->&nbsp;</p> 
 
 	</div>
 </div>
 
 <div class="container">
 	<div class="row">
-		<div class="col-lg-8 offset-lg-2">
+		<div class="col-lg-10 offset-lg-1">
 			<section>
 				{{ content }}
 			</section>
