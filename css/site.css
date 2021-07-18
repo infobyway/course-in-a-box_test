@@ -1,3 +1,19 @@
+/* kalam-regular - latin */
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/kalam-v11-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/kalam-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/kalam-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/kalam-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/kalam-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/kalam-v11-latin-regular.svg#Kalam') format('svg'); /* Legacy iOS */
+}
+
+
+
 .explanatory {
 	font-weight: bold;
 	font-size:  20px;
@@ -172,9 +188,10 @@ blockquote {
   background-color: #e5e5e5;
   border-radius: 10px;
   margin: 30px 0 35px 0;
-  padding: 40px 60px 20px 60px;
+  padding: 30px 50px 10px 50px;
   font-family:'Kalam';
-  font-size:1.3em;
+  font-size:1.1em;
+  line-height:  1.5;
 }
 
 .objectives ul, .reflection ul {
