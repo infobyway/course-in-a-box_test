@@ -44,7 +44,7 @@
 	font
 	}
 
-.objectives h1 {
+.objectives h1, .explanatory h1 {
 	font-size: large;
 	font-weight:  bold;
 	font-family: sans-serif;
@@ -268,4 +268,87 @@ blockquote {
   font-size:1.3em;
 }
 
+.time, .videotime {
+  color:#3fb58e;
+  background: #caf6e6;
+  border-radius: 10px;
+  margin: 0px 0 0 0;
+  display: inline-block;
+  border-width: 0 0 0 2px;
+  padding: 8px 13px 8px 34px;
+  background-image: url(../img/clock.svg);
+  background-size: 18px;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  font-size: small;
+}
+
+.videotime {
+  float:left;
+}
+
+.source { 
+  color:#710040;
+  background: #E58CBE;
+  border-radius: 10px;
+  margin-left: 25px;
+  display: inline-block;
+  border-width: 0 0 0 2px;
+  padding: 8px 13px 8px 13px;
+  font-size:  small;
+  /* background-image: url(../img/clock.svg);
+  background-size: 18px;
+  background-position: 10px center;
+  background-repeat: no-repeat; */
+}
+
+.source a, .source a:visited {
+  color:#710040;
+}
+
+.download-box {
+  color:#1a53ff;
+  background: #b3c6ff;
+  border-radius: 2px;
+  margin: 14px 0 0 0;
+  display: inline-block;
+  border-width: 0 0 0 2px;
+  padding: 8px 13px 8px 34px;
+  background-image: url(../images/download.png);
+  background-size: 18px;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+}
+
+a.download-box:link {
+  text-decoration: underline;
+  color: #001a66;
+  background: none;
+}
+
+.agenda .time {
+  margin: 0 0 25px 0;
+}
+
+figure {
+  padding: 0 0 50px 0;
+  margin: 20px 0 0 0;
+}
+
+figure img {
+  display: block;
+  max-width: 100%;
+}
+
+.agenda img {
+  max-width: 100%;
+}
+
+.discussion-link {
+  border-top: solid 1px #DDD;
+  padding-top: 20px;
+  margin-top: 55px;
+  padding-bottom:0;
+  margin-bottom:0;
+}
 

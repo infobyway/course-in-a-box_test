@@ -9,6 +9,63 @@ layout: base
 			<div class="content p-md-2">
 				<h1>{{ page.title }}</h1>
 				{{ content }}
+				
+
+
+<!-- next_in_module.html -->
+{% assign next=null %}
+{% assign prev=null %}
+{% assign temp=null %}
+
+{% for p in site.categories[module] reversed %}
+  {% if p.url == page.url %}
+    {% if temp %}
+      {% assign prev=temp %}
+    {% endif %}
+  {% elsif temp.url == page.url %}
+    {% assign next=p %}
+  {% endif %}
+  {% assign temp=p %}
+{% endfor %}
+
+
+
+
+
+
+<!-- next_module.html -->
+{% for m in site.data.course.modules %}
+	{% if m == module and forloop.last != true %}
+		{% assign n = forloop.index0 | plus:1  %}
+		{% assign nextmod = site.data.course.modules[n] %}
+		{% assign nextmod_post = site.categories[next]|reverse|first %}
+	{% endif %}
+{% endfor %}
+
+<hr/>
+
+
+{% if next==null %}
+
+	{% if nextmod==null %}
+		<p>Congratulations! You have completed this module.</p>
+
+	{% else %}
+
+				Next: 			<a rel="next" class="next" href="../../{{ nextmod }}/index/" style="text-transform:capitalize;"> {{ nextmod }}
+			</a>
+	{% endif %}
+
+{% else %}
+
+
+Next: <a rel="prev" class="prev" href="{{ site.baseurl }}{{ next.url }}">
+							{{ next.title }} </a><br/>		
+
+
+{% endif %}
+
+<!--
 				{% include next_in_module.html %}
 				{% if prev or next %}<hr />{% endif %}
         <div class="row">
@@ -31,6 +88,7 @@ layout: base
 					</div>
 				{% endif %}
         </div>
+			-->
 			</div>
 		</div>
   </div>

@@ -1,4 +1,62 @@
 <div class="sidebar col-md-3">
+
+<center>
+<img src="../../../img/introductionModuleIcon.png"/>
+
+
+<br/>
+<p><b>Connected Learning Basics</b></p><hr/>
+
+<p>Please don't pay attention to the way this sidebar looks/works. It is still a work in progress.</p>
+<hr/></center>
+
+<!--      {% for module in site.data.course.modules %}
+       {% assign first_post = site.categories[module]|reverse|first %}
+       <li class="nav-item py-2{% if page.categories[1] == module %} active{% endif %}">
+         <a class="nav-link" href="{{ site.baseurl }}{{ first_post.url }}">
+           {{ module }}
+         </a>
+       </li>
+      {% endfor %}
+
+      <hr/> -->
+
+
+<ol>
+{% for module in site.data.course.modules %}
+{% assign first_post = site.categories[module]|reverse|first %}
+
+
+{% if page.categories[1] == module %}
+
+
+<li style="text-transform: uppercase;background-color: pink;font-weight: bold;}"> {{module}} </li>
+	<ul style="margin-left:15px;">
+		{% for post in site.categories[module] reversed %}
+			<!-- <li  class="{% if post.url == page.url %}active{% endif %} {% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %}" > -->
+				<li>
+				<a
+						href="{{ site.baseurl }}{{ post.url }}">
+					{{ post.title }}
+				</a>
+			</li>
+		{% endfor %}
+	</ul>
+
+{% else %}
+
+<li style="text-transform: uppercase;font-weight: bold;}"><a class="nav-link" href="{{ site.baseurl }}{{ first_post.url }}"> {{module}} </a></li>
+
+{% endif %}
+
+
+
+{% endfor %}
+</ol>
+
+<!--
+<hr/>
+
 	{% include next_module.html %}
 
 	{% if prev %}
@@ -30,5 +88,5 @@
 			<a rel="next" class="next" href="{{ site.baseurl }}{{ next_post.url }}"> {{ next }}
 			</a>
 		</div>
-	{% endif %}
+	{% endif %} -->
 </div>
