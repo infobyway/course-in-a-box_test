@@ -15,7 +15,7 @@ published: true
 
 <div style="width:300px;background-color:teal;">
 
-<a href="/modules/what is connected learning/index/"><img src="img/introductionModuleIcon.png"/><br/>
+<a href="/modules/about this module/index/"><img src="img/introductionModuleIcon.png"/><br/>
 <font color="#fff">Connected Learning Basics</font>
 </a></div>
 
