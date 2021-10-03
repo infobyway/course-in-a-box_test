@@ -13,6 +13,10 @@ published: true
 <!-- THIS IS THE LANDING PAGE CONTENT -->
 <center>
 
+<div style="width:50%; border-style: solid; border-width: 10px; border-color: red; margin-bottom: 10px;">
+Please don't bother reviewing or critiquing this page, it is just a placeholder for now!
+</div>
+
 <div style="width:300px;background-color:teal;">
 
 <a href="modules/about this module/index/"><img src="img/introductionModuleIcon.png"/><br/>

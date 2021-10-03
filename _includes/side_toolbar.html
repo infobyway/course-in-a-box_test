@@ -1,13 +1,13 @@
 <div class="sidebar col-md-3">
 
-<center>
-<img src="../../../img/introductionModuleIcon.png"/>
+<center><a href="/modules/about this module/index/">
+<img src="../../../img/introductionModuleIcon.png"/></a>
 
 
 <br/>
 <p><b>Connected Learning Basics</b></p><hr/>
-
-<p>Please don't pay attention to the way this sidebar looks/works. It is still a work in progress.</p>
+<div style="width:80%; border-style: solid; border-width: 10px; border-color: red; margin-bottom: 10px;">
+<p>Please don't pay attention to the way this sidebar looks/works. It is still a work in progress.</p></div>
 <hr/></center>
 
 <!--      {% for module in site.data.course.modules %}
@@ -22,7 +22,7 @@
       <hr/> -->
 
 
-<ol>
+<ul>
 {% for module in site.data.course.modules %}
 {% assign first_post = site.categories[module]|reverse|first %}
 
@@ -30,16 +30,25 @@
 {% if page.categories[1] == module %}
 
 
-<li style="text-transform: uppercase;background-color: pink;font-weight: bold;}"> {{module}} </li>
+<li class="active" style="text-transform: uppercase;font-weight: bold;background-color: #17a2b8;}"> {{module}} </li>
 	<ul style="margin-left:15px;">
 		{% for post in site.categories[module] reversed %}
 			<!-- <li  class="{% if post.url == page.url %}active{% endif %} {% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %}" > -->
-				<li>
+
+
+
+					{% if post.url contains "index" %}
+{% else %}
+				<li class="{% if post.url == page.url %}active{% endif %}">
+
+
+
 				<a
 						href="{{ site.baseurl }}{{ post.url }}">
 					{{ post.title }}
 				</a>
 			</li>
+			{% endif %}
 		{% endfor %}
 	</ul>
 
